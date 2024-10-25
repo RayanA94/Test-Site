@@ -1,19 +1,14 @@
 // identifier le btn
 const btn = document.getElementById("btn")
-const st = document.getElementById("st")
-const main_section = document.querySelector(".main_section")
+
 // definir une function
 function handleClick(e) {
-	// e.target.innerText = "clicke le btn"
-	// selectioner le titre
-	st.innerText = "bouton cliqué !!"
-	st.classList.add("red-text")
-
-	// changer son innerText
+	e.target.innerHTML = "bonjour"
 }
 
 // rachouter une click event
 btn.addEventListener("click", handleClick)
 
 // log pour tester
-console.log("test ...", btn)
+// console.log("test ...", btn)
+
